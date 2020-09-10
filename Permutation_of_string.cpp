@@ -4,6 +4,8 @@
 //   RECOMMENDED TO CODE IT BY YOURSELF
 //    THANKS FOR YOUR VISIT :)
 
+ //  FOLLOWING IS THE SOLUTION FOR "Creating Strings I" FROM CSES:   REFER TO THE LINK  ->   https://cses.fi/problemset/task/1622
+
 
 #include<bits/stdc++.h>
 typedef unsigned long long ll;
