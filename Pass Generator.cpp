@@ -101,7 +101,12 @@ int main(){
         else if(ch != 2)
             cout << "\n\tINVALID CHOICE!!\n\t";
 
-        system("PAUSE");
-        cout << "\n\n";
+        if(ch != 2){
+            cout << "\n   \t";
+            system("PAUSE");
+            cout << "\n\n";
+        }
     }while(ch != 2);
+    return 0;
 }
+
