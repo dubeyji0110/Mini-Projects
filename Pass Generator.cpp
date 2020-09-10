@@ -102,5 +102,6 @@ int main(){
             cout << "\n\tINVALID CHOICE!!\n\t";
 
         system("PAUSE");
+        cout << "\n\n";
     }while(ch != 2);
 }
