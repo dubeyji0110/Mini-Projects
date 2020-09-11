@@ -22,13 +22,15 @@ void boardReset(){
 void printBoard(){
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
+            if(j == 0)
+                cout << "\t\t\t";
             cout << " " << board[i][j] << " ";
             if(j != 2)
                 cout << "|";
         }
-        cout << endl;
+        cout << "\n";
         if(i != 2)
-            cout << "-----------\n";
+            cout << "\t\t\t-----------\n";
     }
 }
 
@@ -73,16 +75,16 @@ void playGame(){
         while(1){
             cout << "Enter Column No. you want to make move: ";
             cin >> c;
-            if(c < 1 || c > 9)
-                cout << "Enter Coulmn in Range 1 to 9\n";
+            if(c < 1 || c > 3)
+                cout << "Enter Coulmn in Range 1 to 3\n";
             else
                 break;
         }
         while(1){
             cout << "Enter Row No. you want to make move: ";
             cin >> r;
-            if(r < 1 || r > 9)
-                cout << "Enter Row in Range 1 to 9\n";
+            if(r < 1 || r > 3)
+                cout << "Enter Row in Range 1 to 3\n";
             else
                 break;
         }
