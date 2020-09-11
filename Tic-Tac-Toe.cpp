@@ -106,12 +106,15 @@ int main(){
         cout << "Symbol Assigned to " << p2 << " is 'O'\n\n";
         printBoard();
         playGame();
+        cout << "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        cout << "\t\t\t\tRESULT: ";
         if(Boardfull() && !(isWinner('X') || isWinner('Y')))
-            cout << "\n\nGame Tie!\n";
+            cout << "Game Tie!\n";
         else if(alt % 2 == 0)
-            cout << "\n\n" << p2 << " Wins!\n";
+            cout << p2 << " Wins!\n";
         else
-            cout << "\n\n" << p1 << " Wins\n";        
+            cout << p1 << " Wins!\n"; 
+        cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n";       
         cout << "\nDo You Want to Play Again? (Y / N): ";
         boardReset();
         alt = 0;
