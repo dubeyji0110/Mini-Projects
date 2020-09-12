@@ -10,7 +10,6 @@
 	   	  \___\/       \___\/
     This tool is subjected to copyright. Please take care of that dear user.
     */
-//	printf("This is a Software which helps you to maintain your fitness..!!\n");
 exe()
 {
 	printf("----------------------------Redy-Made-Exercise Section--------------------------\n");
