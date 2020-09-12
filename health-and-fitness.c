@@ -7,7 +7,7 @@
 		    /   / /------/   / /
 		   /   / /      /   / /
 		  /___/ /      /___/ /
-	          \___\/       \___\/
+	   	  \___\/       \___\/
     This tool is subjected to copyright. Please take care of that dear user.
     */
 //	printf("This is a Software which helps you to maintain your fitness..!!\n");
