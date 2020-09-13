@@ -16,7 +16,7 @@ int spchar(char pass[])
 	int i,count_spchars=0;
 	for(i=0;i<strlen(pass);i++)
 	{
-		if(pass[i]>=33 && pass[i]<=47)
+		if(pass[i]>=33 && pass[i]<=47 || pass[i]>=58 && pass[i]<=64)
 		count_spchars++;
 	}
 	return count_spchars;
@@ -53,8 +53,8 @@ int count_lc(char pass[])
  } 
 int main()
 {
-	printf("******Password Validator********\n");
 	label:;
+	printf("\t\t******Password Validator********\n");
 	char pass[50],c;			
 	printf("Enter your password:");
 	scanf("%s",pass);							//input pass
@@ -75,7 +75,7 @@ int main()
 	printf("Try Again?[Y/N]");
 	fflush(stdin);
 	scanf("%c",&c);
-	if(c==89 && c==121)
+	if(c==89 || c==121)
 	{
 		system("cls");
 		goto label;
