@@ -1,3 +1,14 @@
+ /*   			 ____         ____ 
+		        /   /\       /   /\
+		       /   / /	    /	/ /
+		      /   / /______/   / /
+		     /   / _______    / /
+		    /   / /------/   / /
+		   /   / /      /   / /
+		  /___/ /      /___/ /
+	   	  \___\/       \___\/
+    This tool is subjected to copyright. Please take care of that dear user.
+    */
 #include<stdio.h>
 #include<conio.h>
 void check(char,char);
