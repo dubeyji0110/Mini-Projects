@@ -110,7 +110,7 @@ int main(){
         playGame();
         cout << "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         cout << "\t\t\t\tRESULT: ";
-        if(Boardfull() && !(isWinner('X') || isWinner('Y')))
+        if(Boardfull() && !(isWinner('X') || isWinner('O')))
             cout << "Game Tie!\n";
         else if(alt % 2 == 0)
             cout << p2 << " Wins!\n";
