@@ -18,6 +18,7 @@ void insrt(snode** hd, snode** tl, int n){
     p = new snode;
     if(p != NULL){
         p -> data = n;
+        p -> next = NULL;
         if(*hd == NULL){
             *hd = *tl = p;
         }
@@ -213,6 +214,7 @@ void ins(snode** hd, snode** tl, int n){
     p = new snode;
     if(p != NULL){
         p -> data = n;
+        p -> next = NULL:
         if(*hd == NULL){
             *hd = *tl = p;
             (*tl) -> prev = NULL;
