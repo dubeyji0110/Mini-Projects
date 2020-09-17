@@ -1,8 +1,6 @@
-//CODE FOR GENERATING RANDOM PASSWORD WITHOUT USING INBUILT RANDOM FUNCTION
-// COPYRIGHT CONTENT BY: DEVANSH DUBEY
-//  BELOW CODE IS FOR HELP PURPOSE ONLY.
-//   RECOMMENDED TO CODE IT BY YOURSELF
-//    THANKS FOR YOUR VISIT :)
+//   CODE FOR RANDOM PASSWORD GENERATOR
+//   INBUILT RANDOM FUNCTION IS NOT USED
+//   THANKS FOR YOUR VISIT :)
 
 
 #include<bits/stdc++.h>
@@ -18,7 +16,7 @@ void generate_password(int len){
     string pass = "";
     string alpha = "abcdefghijklmnopqrstuvwxyz";
     string Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string spchar = "!@#$%&*";
+    string spchar = "$*#!%&@";
     string nums = "0123456789";
 
     int cnt = 0, cnt_alpha = 0, cnt_Alpha = 0, cnt_sp = 0, cnt_nums = 0;
@@ -76,11 +74,14 @@ void generate_password(int len){
 
     cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
     cout << "\n\t\tPASSWORD: " << pass << endl;
-    cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+    cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t";
+    system("PAUSE");
+    system("cls");
 }
 
 int main(){
     int ch, len;
+    system("cls");
     do{
         cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         cout << "\t\tRANDOM PASSWROD GENERATOR\n";
@@ -94,19 +95,16 @@ int main(){
             if(len < 6 || len > 32){
                 cout << "\n\t\tERROR!!\n\t(Password should contain at least 6 characters and at max 32 characters) \n\t";
                 system("PAUSE");
+                system("cls");
             }
             else
                 generate_password(len);
         }
-        else if(ch != 2)
+        else if(ch != 2){
             cout << "\n\tINVALID CHOICE!!\n\t";
-
-        if(ch != 2){
-            cout << "\n   \t";
             system("PAUSE");
-            cout << "\n\n";
+            system("cls");
         }
-    }while(ch != 2);
-    return 0;
-}
 
+    }while(ch != 2);
+}
