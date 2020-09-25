@@ -8,4 +8,4 @@ for match in matches:
     if(match['mchstate'] != 'nextlive'):
         print(c.livescore(match['id']))
         print(c.commentary(match['id']))
-        print(c.scorecard(match['id']))
+        print(c.scorecard(match['id']),end="")
