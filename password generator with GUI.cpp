@@ -1,12 +1,14 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 
-int rand(int limit)		//Generating random number in range (limit)
+int random(int limit)		//Generating random number in range (limit)
 {
 	static int x=3251;
 	x=((x*x)/100)%10000;
 	return x%limit;
 }
+
 void gen_pass(int len)
 {
 	string pass = "";
@@ -17,13 +19,13 @@ void gen_pass(int len)
 
 	int count=0, acount=0, Acount=0, scount=0, ncount=0;
 
-	int temp=rand(26);
+	int temp=random(26);
 	pass+=alpha[temp];
 	acount++;
 
 	while(count<len-2)
 	{
-		int flag=rand(4);
+		int flag=random(4);
 		switch(flag)
 		{
 			case 0:	//min 1 upper case letter
@@ -32,7 +34,7 @@ void gen_pass(int len)
 				break;
 				else
 				{
-					temp=rand(26);
+					temp=random(26);
 					pass+=Alpha[temp];
 					count++;
 					Acount++;
@@ -45,7 +47,7 @@ void gen_pass(int len)
 				break;
 				else
 				{
-					temp=rand(26);
+					temp=random(26);
 					pass+=alpha[temp];
 					count++;
 					acount++;
@@ -58,7 +60,7 @@ void gen_pass(int len)
 				break;
 				else
 				{
-					temp=rand(10);
+					temp=random(10);
 					pass+=nums[temp];
 					count++;
 					ncount++;
@@ -71,7 +73,7 @@ void gen_pass(int len)
 					break;
 				else
 				{
-					temp=rand(7);
+					temp=random(7);
 					pass+=spchar[temp];
 					count++;
 					scount++;
@@ -80,7 +82,7 @@ void gen_pass(int len)
 			}
 		}
 	}
-	temp=rand(26);	//ending with Upper Case
+	temp=random(26);	//ending with Upper Case
 	pass+=Alpha[temp];
 	cout<<endl<<"Password Generated: "<<pass<<endl; 	//final password
 	system("PAUSE");
