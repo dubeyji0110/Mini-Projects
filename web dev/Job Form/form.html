@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMeAJob</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get" class="form">
+            <h1><u>Job Form</u></h1>
+            <hr>
+            <p>
+                <label for="name">
+                    Name:*
+                <input type="text" name="name" id="name" required>
+            </label>
+            </p>
+            <p>
+                <label for="age">
+                    Age:
+                    <input type="number" name="age" id="age" required>
+                </label>
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+                    <p>
+                        <label for="male">
+                        <input type="radio" name="gender" id="male" required>Male</label>
+                        <label for="female">
+                        <input type="radio" name="gender" id="female" required>Femail</label>
+                    </p>
+            </fieldset>
+                <fieldset>
+                    <legend>Basic Details</legend>
+                    <p>
+                    <label for="post">
+                        Post* :
+                        <select name="post" id="post" required>
+                            <option value="">---Select---</option>
+                            <option value="sde">Software Developer Engineer</option>
+                            <option value="front">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Fullstack Developer</option>
+                            <option value="intern">Intern</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label for="yr_of_exp">
+                        Year of experience:
+                        <input type="number" name="yr_of_exp" id="yr_of_exp">
+                    </label>
+                </p>
+                <p>
+                    <label for="qualification">
+                        Last Qualification:
+                        <input type="text" name="qualification" id="qualification" required>
+                    </label>
+                </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Projects</legend>
+                    <label for="describe">
+                    Describe your project:
+                    <textarea name="describe" id="describe" cols="30" rows="10"></textarea>
+                </label>
+                    <label for="project">
+                        Paste your project link here:
+                    <input type="text" name="project" id="project">
+                </label>
+                </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="github">
+                        Github:
+                        <input type="text" name="github" id="github" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="linkedin">
+                        Linkedin:
+                        <input type="text" name="linkedin" id="linkedin">
+                    </label>
+                </p>
+                <p>
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="phn">
+                        Phone number: (With Country Code):
+                        <input type="number" name="phn" id="phn">
+                    </label>
+                </p>
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
