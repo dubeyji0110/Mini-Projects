@@ -50,9 +50,8 @@ body main section h1 {
 }
 
 section {
-    min-height: 100vh;
+    padding-bottom: 20px;
     background-color: rgb(241, 241, 241);
-
 }
 
 video {
