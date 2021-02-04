@@ -9,18 +9,18 @@
 <body>
     <div class="container">
         <form action="" method="get" class="form">
-            <h1><u>Job Form</u></h1>
+            <h1 id="heading"><u>Job Form</u></h1>
             <hr>
             <p>
                 <label for="name">
                     Name:*
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" required placeholder="eg: Rahul">
             </label>
             </p>
             <p>
                 <label for="age">
                     Age:
-                    <input type="number" name="age" id="age" required>
+                    <input type="number" name="age" id="age" required >
                 </label>
             </p>
             <fieldset>
@@ -50,13 +50,13 @@
                 <p>
                     <label for="yr_of_exp">
                         Year of experience:
-                        <input type="number" name="yr_of_exp" id="yr_of_exp">
+                        <input type="number" name="yr_of_exp" id="yr_of_exp" placeholder="eg: 6">
                     </label>
                 </p>
                 <p>
                     <label for="qualification">
                         Last Qualification:
-                        <input type="text" name="qualification" id="qualification" required>
+                        <input type="text" name="qualification" id="qualification" required placeholder="eg: Master's/Bachelor's">
                     </label>
                 </p>
                 </fieldset>
@@ -64,11 +64,11 @@
                     <legend>Projects</legend>
                     <label for="describe">
                     Describe your project:
-                    <textarea name="describe" id="describe" cols="30" rows="10"></textarea>
+                    <textarea name="describe" id="describe" cols="30" rows="10" placeholder="Technology used, problem faced, how you come up with solution and some concepts..."></textarea>
                 </label>
                     <label for="project">
                         Paste your project link here:
-                    <input type="text" name="project" id="project">
+                    <input type="text" name="project" id="project" placeholder="eg: https://www.github.com/">
                 </label>
                 </fieldset>
             <fieldset>
@@ -76,25 +76,25 @@
                 <p>
                     <label for="github">
                         Github:
-                        <input type="text" name="github" id="github" required>
+                        <input type="text" name="github" id="github" required placeholder="eg: https://www.github.com/">
                     </label>
                 </p>
                 <p>
                     <label for="linkedin">
                         Linkedin:
-                        <input type="text" name="linkedin" id="linkedin">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="(Optional)">
                     </label>
                 </p>
                 <p>
                     <label for="email">
                         Email:
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required placeholder="eg: abc@xyz.com">
                     </label>
                 </p>
                 <p>
                     <label for="phn">
                         Phone number: (With Country Code):
-                        <input type="number" name="phn" id="phn">
+                        <input type="number" name="phn" id="phn" placeholder="+11-1111111111">
                     </label>
                 </p>
             </fieldset>

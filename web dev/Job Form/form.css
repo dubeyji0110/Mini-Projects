@@ -1,14 +1,17 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 75%;
+}
 body{
     background-image: url(form.jpg);
     background-attachment:fixed;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font: weight 500;
-    font-size: 17px;
-    padding: 10px 100px 10px 100px;
-    margin: 15px 30px;
+    font-size: 1.7rem;
+    padding: 1.0rem 10rem 1.0rem 10rem;
+    margin: 1.5rem 3.0rem;
 }
 h1{
     text-align: center;
@@ -18,13 +21,13 @@ h1{
     opacity: 90%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5px 20px 15px 20px;
-    border: 2px solid gray;
-    border-radius: 5px;
+    padding: .5rem 2rem 1.5rem 2rem;
+    border: .2rem solid gray;
+    border-radius: .5rem;
 }
 fieldset{
     border: solid #000000;
-    padding: 10px;
+    padding: 1rem;
 }
 input[type="text"],
 input[type="password"],
@@ -32,7 +35,7 @@ input[type="email"],
 input[type="number"],
 textarea,select
 {
-    font-size: 17px;
+    font-size: 1.7rem;
     width: 100%;
 }
 #age{
@@ -44,19 +47,20 @@ textarea,select
 input[type="submit"]
 {
     background-color: brown;
-    padding: 20px 30px 20px 30px;
-    border: none;
-    border-radius: 4px;
+    padding: .8rem;
+    border-radius: .4rem;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
     font-weight: 500;
-    font-size: 20px;
-    margin: 15px 0px 0px 250px;
+    font-size: 2rem;
+    margin: auto;
+    display: grid;
     width: 50%;
 }
 form{
-    margin: 20px;
+    margin: 2rem;
 }
 input[type="submit"]:hover{
     background-color: rgb(0, 255, 42);
 }
+@media 
