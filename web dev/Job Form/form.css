@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 75%;
+}
+body{
+    background-image: url(form.jpg);
+    /* background-color: aliceblue     ; */
+    background-attachment:fixed;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: weight 500;
+    font-size: 1.7rem;
+    /* padding: .8rem 8rem 1.0rem 8rem; */
+    margin: 1.5rem 3.0rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h1{
+    text-align: center;
+}
+textarea{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    background-color: rgb(146, 146, 143);
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .5rem 2rem 1.5rem 2rem;
+    border: .2rem solid gray;
+    border-radius: .5rem;
+}
+fieldset{
+    border: solid #000000;
+    padding: 1rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,select
+{
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: .8rem;
+    border: none;
+    width: 100%;
+}
+#age{
+    width: 5%;
+}
+#name{
+    width: 40%;
+}
+input[type="submit"]
+{
+    background-color: brown;
+    padding: .8rem;
+    border-radius: .4rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: auto;
+    display: grid;
+    width: 50%;
+    margin-top: 10px;
+}
+form{
+    margin: 2rem;
+}
+input[type="submit"]:hover{
+    background-color: rgb(0, 255, 42);
+}
+
+    /* ipad pro  */
+@media (min-width: 601px) and (max-width:1240px)
+{
+    html{
+        font-size: 90%;
+        font-weight: bold;
+    }
+}
+
+
+        /* mobil to laptop */
+@media (min-width: 401px) and (max-width: 600px)
+{
+    html{
+        font-size: 50%;
+        font-weight: bold;
+    }
+    body{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    #name{
+        width: 50%;
+    }
+    #age{
+        width: 25%;
+    }
+}
+
+        /* for samsung */
+@media (max-width: 400px)
+{
+    html{
+        font-size:  40%;
+        font-weight: bolder ;
+    }
+    body{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .container form{
+        width: 100%;
+        border-left: 5rem;
+    }
+    form{
+        padding: 0rem 3rem 0rem 0rem;
+    }
+    #name{
+        width: 100%;
+    }
+    #age{
+        width: 25%;
+    }
+    input[type="submit"]
+{
+    padding: 5px 5px 5px 5px;
+    font-size: large;
+}
+}
